@@ -48,11 +48,11 @@ public class MemoryMemberRepositoryTest {
     @Test
     public void findAll(){
         Member member1 = new Member();
-        member1.setName("spring1");
+        member1.setName("Test1");
         repository.save(member1);
 
         Member member2 = new Member();
-        member2.setName("spring2");
+        member2.setName("Test2");
         repository.save(member2);
 
         List<Member> result = repository.findAll();
